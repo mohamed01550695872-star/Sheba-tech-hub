@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products - SHEBA TECH HUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/products.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <script src="cart.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" />
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-search"><span class="search-icon">🔍</span><input type="text" placeholder="Search products..." /></div>
+        <button class="nav-icon-btn" title="Notifications">🔔<span class="badge-count">3</span></button>
+        <a href="cart.html" class="nav-icon-btn" title="Shopping Cart">🛒<span class="badge-count">2</span></a>
+        <a href="login.html" class="nav-login">Login</a>
+      </div>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- PROMO BANNER SLIDER -->
+  <section class="promo-slider-section">
+    <div class="promo-slider-viewport">
+      <div class="promo-slider-track" id="promoTrack">
+        <div class="promo-slide">
+          <img src="https://images.pexels.com/photos/10352379/pexels-photo-10352379.jpeg?auto=compress&cs=tinysrgb&w=1400&h=500&fit=crop" alt="Premium Laptops" />
+          <div class="promo-overlay"><h3>Premium Laptops</h3><p>Power & elegance in every device</p></div>
+        </div>
+        <div class="promo-slide">
+          <img src="https://images.pexels.com/photos/215581/pexels-photo-215581.jpeg?auto=compress&cs=tinysrgb&w=1400&h=500&fit=crop" alt="Latest Smartphones" />
+          <div class="promo-overlay"><h3>Latest Smartphones</h3><p>Stay connected with cutting-edge tech</p></div>
+        </div>
+        <div class="promo-slide">
+          <img src="https://images.pexels.com/photos/9794458/pexels-photo-9794458.jpeg?auto=compress&cs=tinysrgb&w=1400&h=500&fit=crop" alt="Gaming Gear" />
+          <div class="promo-overlay"><h3>Gaming Gear</h3><p>Level up your gaming experience</p></div>
+        </div>
+        <div class="promo-slide">
+          <img src="https://images.pexels.com/photos/32583519/pexels-photo-32583519.jpeg?auto=compress&cs=tinysrgb&w=1400&h=500&fit=crop" alt="Smart Accessories" />
+          <div class="promo-overlay"><h3>Smart Accessories</h3><p>Everything you need in one place</p></div>
+        </div>
+      </div>
+    </div>
+    <button class="promo-nav promo-prev" id="promoPrev" title="Previous">‹</button>
+    <button class="promo-nav promo-next" id="promoNext" title="Next">›</button>
+    <div class="promo-dots" id="promoDots"></div>
+  </section>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1>All Products</h1>
+      <p>Discover our complete catalog of premium tech products</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Products</span></div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS LAYOUT -->
+  <section class="section" style="padding-top:32px;">
+    <div class="container">
+      <div class="products-layout">
+        <!-- FILTER SIDEBAR -->
+        <aside class="filter-sidebar">
+          <h3>Filters</h3>
+          <!-- Categories -->
+          <div class="filter-group">
+            <h4>Category</h4>
+            <div class="filter-option"><input type="checkbox" id="c1" checked /><label for="c1">Laptops</label><span class="count">1,200</span></div>
+            <div class="filter-option"><input type="checkbox" id="c2" /><label for="c2">Smartphones</label><span class="count">850</span></div>
+            <div class="filter-option"><input type="checkbox" id="c3" /><label for="c3">Tablets</label><span class="count">320</span></div>
+            <div class="filter-option"><input type="checkbox" id="c4" /><label for="c4">PlayStation</label><span class="count">180</span></div>
+            <div class="filter-option"><input type="checkbox" id="c5" /><label for="c5">Xbox</label><span class="count">150</span></div>
+            <div class="filter-option"><input type="checkbox" id="c6" /><label for="c6">Smart Watches</label><span class="count">240</span></div>
+            <div class="filter-option"><input type="checkbox" id="c7" /><label for="c7">Cameras</label><span class="count">310</span></div>
+            <div class="filter-option"><input type="checkbox" id="c8" /><label for="c8">Accessories</label><span class="count">2,500</span></div>
+          </div>
+          <!-- Price Range -->
+          <div class="filter-group">
+            <h4>Price Range</h4>
+            <div class="price-range">
+              <input type="number" placeholder="Min" value="0" />
+              <span>—</span>
+              <input type="number" placeholder="Max" value="2000" />
+            </div>
+          </div>
+          <!-- Brand -->
+          <div class="filter-group">
+            <h4>Brand</h4>
+            <div class="filter-option"><input type="checkbox" id="b1" /><label for="b1">Dell</label></div>
+            <div class="filter-option"><input type="checkbox" id="b2" /><label for="b2">Apple</label></div>
+            <div class="filter-option"><input type="checkbox" id="b3" /><label for="b3">Samsung</label></div>
+            <div class="filter-option"><input type="checkbox" id="b4" /><label for="b4">Sony</label></div>
+            <div class="filter-option"><input type="checkbox" id="b5" /><label for="b5">ASUS</label></div>
+            <div class="filter-option"><input type="checkbox" id="b6" /><label for="b6">Canon</label></div>
+          </div>
+          <!-- Rating -->
+          <div class="filter-group">
+            <h4>Minimum Rating</h4>
+            <div class="filter-option"><input type="radio" name="rating" id="r5" /><label for="r5">★★★★★ 5 Stars</label></div>
+            <div class="filter-option"><input type="radio" name="rating" id="r4" checked /><label for="r4">★★★★☆ 4+ Stars</label></div>
+            <div class="filter-option"><input type="radio" name="rating" id="r3" /><label for="r3">★★★☆☆ 3+ Stars</label></div>
+          </div>
+          <!-- Availability -->
+          <div class="filter-group">
+            <h4>Availability</h4>
+            <div class="filter-option"><input type="checkbox" id="a1" checked /><label for="a1">In Stock Only</label></div>
+            <div class="filter-option"><input type="checkbox" id="a2" /><label for="a2">On Sale</label></div>
+          </div>
+          <button class="btn btn-primary btn-block btn-sm">Apply Filters</button>
+        </aside>
+
+        <!-- PRODUCTS MAIN -->
+        <div class="products-main">
+          <!-- Toolbar -->
+          <div class="products-toolbar">
+            <span class="result-count">Showing 1–8 of 10,000+ results</span>
+            <div class="toolbar-actions">
+              <select>
+                <option>Sort: Featured</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Highest Rated</option>
+                <option>Newest First</option>
+              </select>
+              <div class="view-toggle">
+                <button class="active" title="Grid View">▦</button>
+                <button title="List View">☰</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/18311089/pexels-photo-18311089.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="UltraBook Pro 15" />
+                <div class="product-badge"><span class="badge-new">NEW</span></div>
+                <button class="wishlist-btn">♥</button>
+              </div>
+              <div class="product-body">
+                <p class="product-brand">Dell</p>
+                <h4 class="product-name">UltraBook Pro 15 — i7, 16GB, 512GB SSD</h4>
+                <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">4.9 (124)</span></div>
+                <div class="product-price"><span class="price-current">$1,299</span><span class="price-old">$1,499</span></div>
+                <div class="stock-status stock-in">● In Stock</div>
+                <div class="product-actions">
+                  <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+                  <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/30639091/pexels-photo-30639091.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Galaxy Ultra 5G" />
+                <div class="product-badge"><span class="badge-sale">-20%</span></div>
+                <button class="wishlist-btn">♥</button>
+              </div>
+              <div class="product-body">
+                <p class="product-brand">Samsung</p>
+                <h4 class="product-name">Galaxy Ultra 5G — 256GB, Pro Camera</h4>
+                <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">4.8 (89)</span></div>
+                <div class="product-price"><span class="price-current">$959</span><span class="price-old">$1,199</span></div>
+                <div class="stock-status stock-in">● In Stock</div>
+                <div class="product-actions">
+                  <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+                  <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/4219885/pexels-photo-4219885.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="PlayStation 5 Pro" />
+                <div class="product-badge"><span class="badge-new">NEW</span></div>
+                <button class="wishlist-btn">♥</button>
+              </div>
+              <div class="product-body">
+                <p class="product-brand">Sony</p>
+                <h4 class="product-name">PlayStation 5 Pro — 1TB, 4K Gaming</h4>
+                <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">5.0 (312)</span></div>
+                <div class="product-price"><span class="price-current">$699</span></div>
+                <div class="stock-status stock-in">● In Stock</div>
+                <div class="product-actions">
+                  <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+                  <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/31541678/pexels-photo-31541678.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Smart Watch Series 7" />
+                <div class="product-badge"><span class="badge-sale">-35%</span></div>
+                <button class="wishlist-btn">♥</button>
+              </div>
+              <div class="product-body">
+                <p class="product-brand">Apple</p>
+                <h4 class="product-name">Smart Watch Series 7 — GPS + Cellular</h4>
+                <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">4.9 (256)</span></div>
+                <div class="product-price"><span class="price-current">$259</span><span class="price-old">$399</span></div>
+                <div class="stock-status stock-in">● In Stock</div>
+                <div class="product-actions">
+                  <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+                  <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/18205642/pexels-photo-18205642.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Tab Pro 11" />
+                <div class="product-badge"><span class="badge-new">NEW</span></div>
+                <button class="wishlist-btn">♥</button>
+              </div>
+              <div class="product-body">
+                <p class="product-brand">Samsung</p>
+                <h4 class="product-name">Tab Pro 11 — 128GB, Wi-Fi + 5G</h4>
+                <div class="product-rating"><span class="stars">★★★★</span><span class="rating-text">4.6 (78)</span></div>
+                <div class="product-price"><span class="price-current">$549</span><span class="price-old">$649</span></div>
+                <div class="stock-status stock-in">● In Stock</div>
+                <div class="product-actions">
+                  <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+                  <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/27617054/pexels-photo-27617054.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="DSLR Camera Pro" />
+                <div class="product-badge"><span class="badge-sale">-15%</span></div>
+                <button class="wishlist-btn">♥</button>
+              </div>
+              <div class="product-body">
+                <p class="product-brand">Canon</p>
+                <h4 class="product-name">DSLR Camera Pro — 24MP, 4K Video</h4>
+                <div class="product-rating"><span class="stars">★★★★</span><span class="rating-text">4.7 (67)</span></div>
+                <div class="product-price"><span class="price-current">$764</span><span class="price-old">$899</span></div>
+                <div class="stock-status stock-in">● In Stock</div>
+                <div class="product-actions">
+                  <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+                  <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/7727496/pexels-photo-7727496.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Gaming Keyboard RGB" />
+                <div class="product-badge"><span class="badge-new">NEW</span></div>
+                <button class="wishlist-btn">♥</button>
+              </div>
+              <div class="product-body">
+                <p class="product-brand">Razer</p>
+                <h4 class="product-name">Gaming Keyboard RGB — Mechanical</h4>
+                <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">4.8 (143)</span></div>
+                <div class="product-price"><span class="price-current">$129</span></div>
+                <div class="stock-status stock-in">● In Stock</div>
+                <div class="product-actions">
+                  <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+                  <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="https://images.pexels.com/photos/3951449/pexels-photo-3951449.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Gaming Laptop RTX" />
+                <div class="product-badge"><span class="badge-sale">-20%</span></div>
+                <button class="wishlist-btn">♥</button>
+              </div>
+              <div class="product-body">
+                <p class="product-brand">ASUS</p>
+                <h4 class="product-name">Gaming Laptop RTX — 32GB, 1TB SSD</h4>
+                <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">4.9 (201)</span></div>
+                <div class="product-price"><span class="price-current">$1,799</span><span class="price-old">$2,249</span></div>
+                <div class="stock-status stock-out">● Out of Stock</div>
+                <div class="product-actions">
+                  <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+                  <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+          <p>Your premier destination for all things tech.</p>
+          <div class="social-links"><a href="#">📘</a><a href="#">🐦</a><a href="#">📷</a><a href="#">💼</a><a href="#">📺</a></div>
+        </div>
+        <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="modules.html">Modules</a></li></ul></div>
+        <div class="footer-col"><h5>Shop</h5><ul><li><a href="products.html">All Products</a></li><li><a href="categories.html">Categories</a></li><li><a href="marketplace.html">Marketplace</a></li></ul></div>
+        <div class="footer-col"><h5>Support</h5><ul><li><a href="contact.html">Help Center</a></li><li><a href="ai.html">AI Recommendation</a></li><li><a href="#">Track Order</a></li></ul></div>
+        <div class="footer-col"><h5>Stay Updated</h5><p style="font-size:0.875rem; margin-bottom:16px;">Subscribe for the latest deals.</p><form class="promo-code"><input type="email" placeholder="Your email" /><button type="submit" class="btn btn-primary btn-sm">Subscribe</button></form></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 SHEBA TECH HUB. All rights reserved.</p><div class="footer-links"><a href="about.html">Privacy Policy</a><a href="about.html">Terms of Service</a></div></div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/products-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maintenance - SHEBA TECH HUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <script src="cart.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-search"><span class="search-icon">🔍</span><input type="text" placeholder="Search products..." /></div>
+        <button class="nav-icon-btn" title="Notifications">🔔<span class="badge-count">3</span></button>
+        <a href="cart.html" class="nav-icon-btn" title="Shopping Cart">🛒<span class="badge-count">2</span></a>
+        <a href="login.html" class="nav-login">Login</a>
+      </div>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Maintenance Services</h1>
+      <p>Professional repair and maintenance for all your tech devices</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Maintenance</span></div>
+    </div>
+  </section>
+
+  <!-- REPAIR CATEGORIES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Expert Service</span>
+        <h2>Repair Categories</h2>
+        <p>Select the type of repair you need for your device</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="svc-icon">💻</div>
+          <h4>Laptop Repair</h4>
+          <p>Screen, keyboard, battery, motherboard, and software issues.</p>
+          <a href="#booking" class="btn btn-secondary btn-sm">Book Repair</a>
+        </div>
+        <div class="service-card">
+          <div class="svc-icon">📱</div>
+          <h4>Phone Repair</h4>
+          <p>Screen replacement, battery, water damage, and charging port.</p>
+          <a href="#booking" class="btn btn-secondary btn-sm">Book Repair</a>
+        </div>
+        <div class="service-card">
+          <div class="svc-icon">🎮</div>
+          <h4>Console Repair</h4>
+          <p>HDMI port, disc drive, controller, and overheating issues.</p>
+          <a href="#booking" class="btn btn-secondary btn-sm">Book Repair</a>
+        </div>
+        <div class="service-card">
+          <div class="svc-icon">📷</div>
+          <h4>Camera Repair</h4>
+          <p>Lens, sensor, shutter mechanism, and flash repair.</p>
+          <a href="#booking" class="btn btn-secondary btn-sm">Book Repair</a>
+        </div>
+        <div class="service-card">
+          <div class="svc-icon">⚡</div>
+          <h4>Hardware Upgrade</h4>
+          <p>RAM, SSD, GPU upgrades for better performance.</p>
+          <a href="#booking" class="btn btn-secondary btn-sm">Book Service</a>
+        </div>
+        <div class="service-card">
+          <div class="svc-icon">🖥️</div>
+          <h4>Screen Replacement</h4>
+          <p>Cracked or broken screen? Fast replacement for any device.</p>
+          <a href="#booking" class="btn btn-secondary btn-sm">Book Service</a>
+        </div>
+        <div class="service-card">
+          <div class="svc-icon">🔋</div>
+          <h4>Battery Replacement</h4>
+          <p>Restore battery life for laptops, phones, and tablets.</p>
+          <a href="#booking" class="btn btn-secondary btn-sm">Book Service</a>
+        </div>
+        <div class="service-card">
+          <div class="svc-icon">🔧</div>
+          <h4>General Diagnostic</h4>
+          <p>Full device diagnostic to identify any hidden issues.</p>
+          <a href="#booking" class="btn btn-secondary btn-sm">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK REPAIR FORM -->
+  <section class="section section-light" id="booking">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Book an Appointment</span>
+        <h2>Book a Repair</h2>
+        <p>Schedule your repair appointment — we'll confirm within 24 hours</p>
+      </div>
+      <div style="max-width:700px; margin:0 auto; background:var(--white); border:1px solid var(--border); border-radius:var(--radius-md); padding:32px;">
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="r-name">Full Name</label>
+              <input type="text" id="r-name" placeholder="John Doe" />
+            </div>
+            <div class="form-group">
+              <label for="r-phone">Phone Number</label>
+              <input type="tel" id="r-phone" placeholder="+1 234 567 890" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="r-email">Email</label>
+              <input type="email" id="r-email" placeholder="you@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="r-device">Device Type</label>
+              <select id="r-device">
+                <option>Laptop</option><option>Smartphone</option><option>Tablet</option>
+                <option>PlayStation</option><option>Xbox</option><option>Camera</option><option>Smart Watch</option><option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="r-category">Repair Category</label>
+              <select id="r-category">
+                <option>Screen Replacement</option><option>Battery Replacement</option>
+                <option>Hardware Upgrade</option><option>Water Damage</option>
+                <option>Software Issue</option><option>General Diagnostic</option><option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="r-date">Preferred Date</label>
+              <input type="date" id="r-date" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="r-time">Preferred Time</label>
+            <select id="r-time">
+              <option>9:00 AM — 10:00 AM</option>
+              <option>10:00 AM — 11:00 AM</option>
+              <option>11:00 AM — 12:00 PM</option>
+              <option>1:00 PM — 2:00 PM</option>
+              <option>2:00 PM — 3:00 PM</option>
+              <option>3:00 PM — 4:00 PM</option>
+              <option>4:00 PM — 5:00 PM</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="r-desc">Problem Description</label>
+            <textarea id="r-desc" placeholder="Describe the issue you're experiencing with your device..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Book Appointment</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPARE PARTS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Genuine Parts</span>
+        <h2>Spare Parts</h2>
+        <p>Authentic spare parts for all your repair needs</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/38264265/pexels-photo-38264265.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Laptop Battery" />
+            <button class="wishlist-btn">♥</button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">OEM</p>
+            <h4 class="product-name">Laptop Battery Replacement — 5000mAh</h4>
+            <div class="product-rating"><span class="stars">★★★★</span><span class="rating-text">4.5 (34)</span></div>
+            <div class="product-price"><span class="price-current">$49</span></div>
+            <div class="stock-status stock-in">● In Stock</div>
+            <div class="product-actions">
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/10558599/pexels-photo-10558599.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="SSD Drive" />
+            <button class="wishlist-btn">♥</button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">Samsung</p>
+            <h4 class="product-name">1TB NVMe SSD — PCIe Gen 4</h4>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">4.9 (87)</span></div>
+            <div class="product-price"><span class="price-current">$89</span></div>
+            <div class="stock-status stock-in">● In Stock</div>
+            <div class="product-actions">
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/7727496/pexels-photo-7727496.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Mechanical Keyboard Switch" />
+            <button class="wishlist-btn">♥</button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">Cherry</p>
+            <h4 class="product-name">Mechanical Keyboard Switches — Pack of 110</h4>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">4.8 (56)</span></div>
+            <div class="product-price"><span class="price-current">$35</span></div>
+            <div class="stock-status stock-in">● In Stock</div>
+            <div class="product-actions">
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/14346818/pexels-photo-14346818.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Camera Lens" />
+            <button class="wishlist-btn">♥</button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">Canon</p>
+            <h4 class="product-name">Camera Lens 50mm f/1.8 — Genuine</h4>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">4.9 (42)</span></div>
+            <div class="product-price"><span class="price-current">$129</span></div>
+            <div class="stock-status stock-in">● In Stock</div>
+            <div class="product-actions">
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+          <p>Your premier destination for all things tech.</p>
+          <div class="social-links"><a href="#">📘</a><a href="#">🐦</a><a href="#">📷</a><a href="#">💼</a><a href="#">📺</a></div>
+        </div>
+        <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="modules.html">Modules</a></li></ul></div>
+        <div class="footer-col"><h5>Shop</h5><ul><li><a href="products.html">All Products</a></li><li><a href="categories.html">Categories</a></li><li><a href="marketplace.html">Marketplace</a></li></ul></div>
+        <div class="footer-col"><h5>Support</h5><ul><li><a href="contact.html">Help Center</a></li><li><a href="ai.html">AI Recommendation</a></li><li><a href="#">Track Order</a></li></ul></div>
+        <div class="footer-col"><h5>Stay Updated</h5><p style="font-size:0.875rem; margin-bottom:16px;">Subscribe for the latest deals.</p><form class="promo-code"><input type="email" placeholder="Your email" /><button type="submit" class="btn btn-primary btn-sm">Subscribe</button></form></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 SHEBA TECH HUB. All rights reserved.</p><div class="footer-links"><a href="about.html">Privacy Policy</a><a href="about.html">Terms of Service</a></div></div>
+    </div>
+  </footer>
+
+</body>
+</html>

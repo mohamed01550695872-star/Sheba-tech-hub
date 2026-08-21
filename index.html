@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHEBA TECH HUB - Everything Tech in One Place</title>
+  <meta name="description" content="SHEBA TECH HUB - Your premier destination for laptops, smartphones, gaming consoles, smart watches, and more. Everything Tech in One Place." />
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <script src="cart.js" defer></script>
+  <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION BAR (sticky, glass-style)
+       ============================================ -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo">
+        <img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" />
+      </a>
+
+      <!-- Main Menu -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+      </ul>
+
+      <!-- Right Actions -->
+      <div class="nav-actions">
+        <!-- Search -->
+        <div class="nav-search">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="Search products..." />
+        </div>
+        <!-- Notifications -->
+        <button class="nav-icon-btn" title="Notifications">🔔<span class="badge-count">3</span></button>
+        <!-- Cart -->
+        <a href="cart.html" class="nav-icon-btn" title="Shopping Cart">🛒<span class="badge-count">2</span></a>
+        <!-- Login -->
+        <a href="login.html" class="nav-login">Login</a>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <span class="hero-badge">⚡ #1 Tech Marketplace</span>
+        <h1>Welcome to <span class="gradient-text">SHEBA TECH HUB</span></h1>
+        <p class="hero-slogan">Everything Tech in One Place</p>
+        <p class="hero-desc">
+          Discover premium laptops, smartphones, gaming consoles, smart watches, and accessories.
+          Shop the latest technology at unbeatable prices with fast delivery and expert support.
+        </p>
+        <div class="hero-buttons">
+          <a href="products.html" class="btn btn-primary btn-lg">Shop Now</a>
+          <a href="categories.html" class="btn btn-outline btn-lg">Explore Products</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="stat-num">10K+</div>
+            <div class="stat-label">Products</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-num">50K+</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-num">4.9★</div>
+            <div class="stat-label Customer Rating">Customer Rating</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="hero-image">
+        <img src="images/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB technology concept" />
+        <div class="floating-card top-right">
+          <div class="icon blue">💻</div>
+          <div>Premium Devices</div>
+        </div>
+        <div class="floating-card bottom-left">
+          <div class="icon green">🚚</div>
+          <div>Fast Delivery</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       HERO SLIDER (CSS-only carousel)
+       ============================================ -->
+  <section class="hero-slider">
+    <div class="slider-wrapper">
+      <div class="section-header" style="text-align:left; margin-bottom: 24px;">
+        <h2 style="font-size: 1.5rem;">Trending Now</h2>
+        <p>Swipe through this week's hottest tech deals</p>
+      </div>
+      <div class="slider-track">
+        <!-- Slide 1: Gaming Laptops -->
+        <div class="slide-card">
+          <img src="https://images.pexels.com/photos/7727496/pexels-photo-7727496.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Gaming Laptops" />
+          <span class="slide-tag">Hot Deal</span>
+        </div>
+        <!-- Slide 2: Smartphones -->
+        <div class="slide-card">
+          <img src="https://images.pexels.com/photos/30639091/pexels-photo-30639091.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Smartphones" />
+          <span class="slide-tag">New Arrival</span>
+        </div>
+        <!-- Slide 3: PlayStation Deals -->
+        <div class="slide-card">
+          <img src="https://images.pexels.com/photos/4219885/pexels-photo-4219885.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="PlayStation Deals" />
+          <span class="slide-tag">Sale</span>
+        </div>
+        <!-- Slide 4: Xbox Deals -->
+        <div class="slide-card">
+          <img src="https://images.pexels.com/photos/5700769/pexels-photo-5700769.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Xbox Deals" />
+          <span class="slide-tag">Sale</span>
+        </div>
+        <!-- Slide 5: Smart Watches -->
+        <div class="slide-card">
+          <img src="https://images.pexels.com/photos/31541678/pexels-photo-31541678.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Smart Watches" />
+          <span class="slide-tag">Trending</span>
+        </div>
+        <!-- Slide 6: Accessories -->
+        <div class="slide-card">
+          <img src="https://images.pexels.com/photos/19055620/pexels-photo-19055620.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Accessories" />
+          <span class="slide-tag">New</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TODAY'S DEALS
+       ============================================ -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">⏰ Limited Time</span>
+        <h2>Today's Deals</h2>
+        <p>Grab these discounted products before they're gone — updated daily!</p>
+      </div>
+      <div class="deals-grid">
+        <!-- Deal 1 -->
+        <div class="deal-card">
+          <div class="deal-image">
+            <img src="https://images.pexels.com/photos/18311089/pexels-photo-18311089.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="UltraBook Pro 15" />
+            <span class="discount-badge">-25%</span>
+          </div>
+          <div class="deal-body">
+            <h4 class="deal-name">UltraBook Pro 15</h4>
+            <p class="deal-brand">Dell</p>
+            <div class="deal-prices">
+              <span class="price-original">$1,299</span>
+              <span class="price-discount">$974</span>
+            </div>
+            <div class="rating">
+              <span class="stars">★★★★</span>
+              <span class="rating-num">(124)</span>
+            </div>
+            <div class="deal-actions">
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="dell-ub-pro15" data-name="UltraBook Pro 15" data-brand="Dell" data-price="1299" data-image="https://images.pexels.com/photos/18311089/pexels-photo-18311089.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">Add to Cart</button>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <!-- Deal 2 -->
+        <div class="deal-card">
+          <div class="deal-image">
+            <img src="https://images.pexels.com/photos/30639091/pexels-photo-30639091.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Galaxy Ultra 5G" />
+            <span class="discount-badge">-20%</span>
+          </div>
+          <div class="deal-body">
+            <h4 class="deal-name">Galaxy Ultra 5G</h4>
+            <p class="deal-brand">Samsung</p>
+            <div class="deal-prices">
+              <span class="price-original">$1,199</span>
+              <span class="price-discount">$959</span>
+            </div>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-num">(89)</span>
+            </div>
+            <div class="deal-actions">
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="samsung-galaxy-ultra" data-name="Galaxy Ultra 5G" data-brand="Samsung" data-price="959" data-image="https://images.pexels.com/photos/30639091/pexels-photo-30639091.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">Add to Cart</button>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <!-- Deal 3 -->
+        <div class="deal-card">
+          <div class="deal-image">
+            <img src="https://images.pexels.com/photos/31541678/pexels-photo-31541678.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Smart Watch Series 7" />
+            <span class="discount-badge">-35%</span>
+          </div>
+          <div class="deal-body">
+            <h4 class="deal-name">Smart Watch Series 7</h4>
+            <p class="deal-brand">Apple</p>
+            <div class="deal-prices">
+              <span class="price-original">$399</span>
+              <span class="price-discount">$259</span>
+            </div>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-num">(256)</span>
+            </div>
+            <div class="deal-actions">
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="apple-watch-s7" data-name="Smart Watch Series 7" data-brand="Apple" data-price="259" data-image="https://images.pexels.com/photos/31541678/pexels-photo-31541678.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">Add to Cart</button>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <!-- Deal 4 -->
+        <div class="deal-card">
+          <div class="deal-image">
+            <img src="https://images.pexels.com/photos/27617054/pexels-photo-27617054.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="DSLR Camera Pro" />
+            <span class="discount-badge">-15%</span>
+          </div>
+          <div class="deal-body">
+            <h4 class="deal-name">DSLR Camera Pro</h4>
+            <p class="deal-brand">Canon</p>
+            <div class="deal-prices">
+              <span class="price-original">$899</span>
+              <span class="price-discount">$764</span>
+            </div>
+            <div class="rating">
+              <span class="stars">★★★★</span>
+              <span class="rating-num">(67)</span>
+            </div>
+            <div class="deal-actions">
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="canon-dslr-pro" data-name="DSLR Camera Pro" data-brand="Canon" data-price="764" data-image="https://images.pexels.com/photos/27617054/pexels-photo-27617054.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">Add to Cart</button>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FEATURED CATEGORIES
+       ============================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Shop by Category</span>
+        <h2>Featured Categories</h2>
+        <p>Explore our wide range of tech categories — find exactly what you need</p>
+      </div>
+      <div class="categories-grid">
+        <a href="products.html" class="category-card">
+          <div class="cat-icon">💻</div>
+          <h4>Laptops</h4>
+          <p>1,200+ products</p>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="cat-icon">📱</div>
+          <h4>Smartphones</h4>
+          <p>850+ products</p>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="cat-icon">📋</div>
+          <h4>Tablets</h4>
+          <p>320+ products</p>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="cat-icon">🎮</div>
+          <h4>PlayStation</h4>
+          <p>180+ products</p>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="cat-icon">🕹️</div>
+          <h4>Xbox</h4>
+          <p>150+ products</p>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="cat-icon">⌚</div>
+          <h4>Smart Watches</h4>
+          <p>240+ products</p>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="cat-icon">📷</div>
+          <h4>Cameras</h4>
+          <p>310+ products</p>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="cat-icon">🎧</div>
+          <h4>Accessories</h4>
+          <p>2,500+ products</p>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="cat-icon">🔧</div>
+          <h4>PC Components</h4>
+          <p>980+ products</p>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="cat-icon">⚙️</div>
+          <h4>Spare Parts</h4>
+          <p>560+ products</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FEATURED PRODUCTS
+       ============================================ -->
+  <section class="section section-blue">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Top Rated</span>
+        <h2>Featured Products</h2>
+        <p>Hand-picked products loved by our customers</p>
+      </div>
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/18311089/pexels-photo-18311089.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="UltraBook Pro 15" />
+            <div class="product-badge">
+              <span class="badge-new">NEW</span>
+            </div>
+            <button class="wishlist-btn" title="Add to Wishlist">♥</button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">Dell</p>
+            <h4 class="product-name">UltraBook Pro 15 — i7, 16GB, 512GB SSD</h4>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.9 (124)</span>
+            </div>
+            <div class="product-price">
+              <span class="price-current">$1,299</span>
+              <span class="price-old">$1,499</span>
+            </div>
+            <div class="stock-status stock-in">● In Stock</div>
+            <div class="product-actions">
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="dell-ub-pro15" data-name="UltraBook Pro 15" data-brand="Dell" data-price="1299" data-image="https://images.pexels.com/photos/18311089/pexels-photo-18311089.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">Add to Cart</button>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/30639091/pexels-photo-30639091.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Galaxy Ultra 5G" />
+            <div class="product-badge">
+              <span class="badge-sale">-20%</span>
+            </div>
+            <button class="wishlist-btn" title="Add to Wishlist">♥</button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">Samsung</p>
+            <h4 class="product-name">Galaxy Ultra 5G — 256GB, Pro Camera</h4>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.8 (89)</span>
+            </div>
+            <div class="product-price">
+              <span class="price-current">$959</span>
+              <span class="price-old">$1,199</span>
+            </div>
+            <div class="stock-status stock-in">● In Stock</div>
+            <div class="product-actions">
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/4219885/pexels-photo-4219885.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="PlayStation 5 Pro" />
+            <div class="product-badge">
+              <span class="badge-new">NEW</span>
+            </div>
+            <button class="wishlist-btn" title="Add to Wishlist">♥</button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">Sony</p>
+            <h4 class="product-name">PlayStation 5 Pro — 1TB, 4K Gaming</h4>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">5.0 (312)</span>
+            </div>
+            <div class="product-price">
+              <span class="price-current">$699</span>
+            </div>
+            <div class="stock-status stock-in">● In Stock</div>
+            <div class="product-actions">
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/31541678/pexels-photo-31541678.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Smart Watch Series 7" />
+            <div class="product-badge">
+              <span class="badge-sale">-35%</span>
+            </div>
+            <button class="wishlist-btn" title="Add to Wishlist">♥</button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">Apple</p>
+            <h4 class="product-name">Smart Watch Series 7 — GPS + Cellular</h4>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.9 (256)</span>
+            </div>
+            <div class="product-price">
+              <span class="price-current">$259</span>
+              <span class="price-old">$399</span>
+            </div>
+            <div class="stock-status stock-in">● In Stock</div>
+            <div class="product-actions">
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="products.html" class="btn btn-outline btn-lg">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       AI RECOMMENDATION BANNER
+       ============================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="ai-banner">
+        <div class="ai-content">
+          <h2>AI-Powered Product Recommendations</h2>
+          <p>
+            Not sure which device is right for you? Our AI recommendation engine analyzes your
+            budget, use case, and preferences to suggest the perfect product — personalized just for you.
+          </p>
+          <div class="ai-tags">
+            <span class="ai-tag">💰 Budget</span>
+            <span class="ai-tag">🎮 Gaming</span>
+            <span class="ai-tag">💻 Programming</span>
+            <span class="ai-tag">📊 Business</span>
+            <span class="ai-tag">🎓 Education</span>
+            <span class="ai-tag">🎬 Content Creation</span>
+          </div>
+          <a href="ai.html" class="btn btn-white btn-lg">Try AI Recommendation</a>
+        </div>
+        <div class="ai-image">
+          <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="AI Technology" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       MARKETPLACE PREVIEW
+       ============================================ -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Buy & Sell</span>
+        <h2>Marketplace Preview</h2>
+        <p>Buy certified used devices or sell your old ones — all in one place</p>
+      </div>
+      <div class="marketplace-grid">
+        <div class="marketplace-card">
+          <div class="mp-icon">🛍️</div>
+          <h4>Buy Used Devices</h4>
+          <p>Browse certified pre-owned devices with warranty and quality guarantee.</p>
+          <a href="marketplace.html" class="btn btn-outline btn-sm">Browse Devices</a>
+        </div>
+        <div class="marketplace-card">
+          <div class="mp-icon">💵</div>
+          <h4>Sell Used Devices</h4>
+          <p>List your old device in minutes and reach thousands of buyers.</p>
+          <a href="marketplace.html" class="btn btn-outline btn-sm">Start Selling</a>
+        </div>
+        <div class="marketplace-card">
+          <div class="mp-icon">🆕</div>
+          <h4>Recently Added</h4>
+          <p>Fresh listings added daily — grab the best deals before others do.</p>
+          <a href="marketplace.html" class="btn btn-outline btn-sm">See Latest</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       MAINTENANCE SERVICES
+       ============================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Expert Service</span>
+        <h2>Maintenance Services</h2>
+        <p>Professional repair and maintenance for all your tech devices</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="svc-icon">💻</div>
+          <h4>Laptop Repair</h4>
+          <p>Screen, keyboard, battery & motherboard repair.</p>
+          <a href="maintenance.html" class="btn btn-secondary btn-sm">Book Repair</a>
+        </div>
+        <div class="service-card">
+          <div class="svc-icon">📱</div>
+          <h4>Phone Repair</h4>
+          <p>Screen replacement, battery & water damage fix.</p>
+          <a href="maintenance.html" class="btn btn-secondary btn-sm">Book Repair</a>
+        </div>
+        <div class="service-card">
+          <div class="svc-icon">🎮</div>
+          <h4>Console Repair</h4>
+          <p>HDMI port, disc drive & controller repair.</p>
+          <a href="maintenance.html" class="btn btn-secondary btn-sm">Book Repair</a>
+        </div>
+        <div class="service-card">
+          <div class="svc-icon">📷</div>
+          <h4>Camera Repair</h4>
+          <p>Lens, sensor & shutter mechanism repair.</p>
+          <a href="maintenance.html" class="btn btn-secondary btn-sm">Book Repair</a>
+        </div>
+        <div class="service-card">
+          <div class="svc-icon">⚡</div>
+          <h4>Hardware Upgrade</h4>
+          <p>RAM, SSD & GPU upgrades for better performance.</p>
+          <a href="maintenance.html" class="btn btn-secondary btn-sm">Book Service</a>
+        </div>
+        <div class="service-card">
+          <div class="svc-icon">🖥️</div>
+          <h4>Screen Replacement</h4>
+          <p>Cracked or broken screen? We'll fix it fast.</p>
+          <a href="maintenance.html" class="btn btn-secondary btn-sm">Book Service</a>
+        </div>
+        <div class="service-card">
+          <div class="svc-icon">🔋</div>
+          <h4>Battery Replacement</h4>
+          <p>Restore battery life for any device.</p>
+          <a href="maintenance.html" class="btn btn-secondary btn-sm">Book Service</a>
+        </div>
+        <div class="service-card">
+          <div class="svc-icon">📅</div>
+          <h4>Book Maintenance</h4>
+          <p>Schedule a full diagnostic & maintenance check.</p>
+          <a href="maintenance.html" class="btn btn-secondary btn-sm">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" />
+          </a>
+          <p>Your premier destination for all things tech. From laptops to gaming consoles, we've got you covered with quality products and expert service.</p>
+          <div class="social-links">
+            <a href="#" title="Facebook">📘</a>
+            <a href="#" title="Twitter">🐦</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="LinkedIn">💼</a>
+            <a href="#" title="YouTube">📺</a>
+          </div>
+        </div>
+        <!-- Company -->
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        <!-- Shop -->
+        <div class="footer-col">
+          <h5>Shop</h5>
+          <ul>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="marketplace.html">Marketplace</a></li>
+            <li><a href="maintenance.html">Maintenance</a></li>
+          </ul>
+        </div>
+        <!-- Support -->
+        <div class="footer-col">
+          <h5>Support</h5>
+          <ul>
+            <li><a href="contact.html">Help Center</a></li>
+            <li><a href="ai.html">AI Recommendation</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div class="footer-col">
+          <h5>Stay Updated</h5>
+          <p style="font-size:0.875rem; margin-bottom:16px;">Subscribe to get the latest deals and product launches.</p>
+          <form class="promo-code">
+            <input type="email" placeholder="Your email address" />
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>© 2026 SHEBA TECH HUB. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="about.html">Privacy Policy</a>
+          <a href="about.html">Terms of Service</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/home-page.js"></script>
+</body>
+</html>

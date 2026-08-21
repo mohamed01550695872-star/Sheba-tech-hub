@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard - SHEBA TECH HUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <script src="cart.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-search"><span class="search-icon">🔍</span><input type="text" placeholder="Search products..." /></div>
+        <button class="nav-icon-btn" title="Notifications">🔔<span class="badge-count">3</span></button>
+        <a href="cart.html" class="nav-icon-btn" title="Shopping Cart">🛒<span class="badge-count">2</span></a>
+        <a href="login.html" class="nav-login">Login</a>
+      </div>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- DASHBOARD LAYOUT -->
+  <section class="section" style="padding-top:24px; padding-bottom:0;">
+    <div class="container">
+      <div class="dashboard-layout">
+        <!-- SIDEBAR -->
+        <aside class="dashboard-sidebar">
+          <div class="sidebar-header">
+            <div class="admin-avatar">A</div>
+            <div>
+              <h4>Admin User</h4>
+              <p>Administrator</p>
+            </div>
+          </div>
+          <nav class="sidebar-menu">
+            <a href="#" class="active"><span class="menu-icon">📊</span> Overview</a>
+            <a href="#"><span class="menu-icon">👥</span> Users</a>
+            <a href="#"><span class="menu-icon">📦</span> Products</a>
+            <a href="#"><span class="menu-icon">🛒</span> Orders</a>
+            <a href="#"><span class="menu-icon">🏷️</span> Categories</a>
+            <a href="#"><span class="menu-icon">🔧</span> Maintenance</a>
+            <a href="#"><span class="menu-icon">🏪</span> Marketplace</a>
+            <a href="#"><span class="menu-icon">📈</span> Reports</a>
+            <a href="#"><span class="menu-icon">⚙️</span> Settings</a>
+          </nav>
+        </aside>
+
+        <!-- MAIN -->
+        <div class="dashboard-main">
+          <div class="dashboard-header">
+            <h2>Dashboard Overview</h2>
+            <a href="#" class="btn btn-primary btn-sm">+ Add New Product</a>
+          </div>
+
+          <!-- STAT CARDS -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon blue">👥</div>
+              <div class="stat-value">12,450</div>
+              <div class="stat-label">Total Users</div>
+              <div class="stat-change up">↑ 12% this month</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon green">📦</div>
+              <div class="stat-value">8,920</div>
+              <div class="stat-label">Total Products</div>
+              <div class="stat-change up">↑ 5% this month</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon orange">🛒</div>
+              <div class="stat-value">3,267</div>
+              <div class="stat-label">Total Orders</div>
+              <div class="stat-change up">↑ 23% this month</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon red">💰</div>
+              <div class="stat-value">$284K</div>
+              <div class="stat-label">Revenue</div>
+              <div class="stat-change up">↑ 18% this month</div>
+            </div>
+          </div>
+
+          <!-- PANELS -->
+          <div class="dashboard-panels">
+            <!-- Recent Orders -->
+            <div class="panel">
+              <div class="panel-header">
+                <h3>Recent Orders</h3>
+                <a href="#">View All →</a>
+              </div>
+              <table class="data-table">
+                <thead>
+                  <tr><th>Order ID</th><th>Customer</th><th>Amount</th><th>Status</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>#ORD-0042</td><td>John Doe</td><td>$1,299</td><td><span class="status-badge status-active">Delivered</span></td></tr>
+                  <tr><td>#ORD-0041</td><td>Jane Smith</td><td>$518</td><td><span class="status-badge status-shipped">Shipped</span></td></tr>
+                  <tr><td>#ORD-0040</td><td>Mike Brown</td><td>$699</td><td><span class="status-badge status-pending">Pending</span></td></tr>
+                  <tr><td>#ORD-0039</td><td>Sara Lee</td><td>$129</td><td><span class="status-badge status-active">Delivered</span></td></tr>
+                  <tr><td>#ORD-0038</td><td>Tom Wilson</td><td>$1,799</td><td><span class="status-badge status-cancelled">Cancelled</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Sales Chart -->
+            <div class="panel">
+              <div class="panel-header">
+                <h3>Monthly Sales</h3>
+              </div>
+              <div class="chart-placeholder">
+                <div class="chart-bar" style="height:60%;"><span class="bar-value">$22K</span><span class="bar-label">Jan</span></div>
+                <div class="chart-bar" style="height:75%;"><span class="bar-value">$28K</span><span class="bar-label">Feb</span></div>
+                <div class="chart-bar" style="height:50%;"><span class="bar-value">$18K</span><span class="bar-label">Mar</span></div>
+                <div class="chart-bar" style="height:85%;"><span class="bar-value">$32K</span><span class="bar-label">Apr</span></div>
+                <div class="chart-bar" style="height:70%;"><span class="bar-value">$26K</span><span class="bar-label">May</span></div>
+                <div class="chart-bar" style="height:95%;"><span class="bar-value">$35K</span><span class="bar-label">Jun</span></div>
+                <div class="chart-bar" style="height:80%;"><span class="bar-value">$30K</span><span class="bar-label">Jul</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MANAGEMENT CARDS -->
+          <div class="modules-grid">
+            <div class="module-card">
+              <div class="module-icon">👥</div>
+              <h3>Users</h3>
+              <p class="module-desc">Manage user accounts, roles, and permissions.</p>
+              <a href="#" class="module-link">Manage Users →</a>
+            </div>
+            <div class="module-card">
+              <div class="module-icon">📦</div>
+              <h3>Products</h3>
+              <p class="module-desc">Add, edit, and manage product catalog.</p>
+              <a href="#" class="module-link">Manage Products →</a>
+            </div>
+            <div class="module-card">
+              <div class="module-icon">🛒</div>
+              <h3>Orders</h3>
+              <p class="module-desc">View and process customer orders.</p>
+              <a href="#" class="module-link">Manage Orders →</a>
+            </div>
+            <div class="module-card">
+              <div class="module-icon">🏷️</div>
+              <h3>Categories</h3>
+              <p class="module-desc">Organize products into categories.</p>
+              <a href="#" class="module-link">Manage Categories →</a>
+            </div>
+            <div class="module-card">
+              <div class="module-icon">🔧</div>
+              <h3>Maintenance Requests</h3>
+              <p class="module-desc">Track and assign repair requests.</p>
+              <a href="#" class="module-link">View Requests →</a>
+            </div>
+            <div class="module-card">
+              <div class="module-icon">🏪</div>
+              <h3>Marketplace Listings</h3>
+              <p class="module-desc">Review and approve used device listings.</p>
+              <a href="#" class="module-link">View Listings →</a>
+            </div>
+          </div>
+
+          <!-- REPORTS TABLE -->
+          <div class="panel" style="margin-top:24px;">
+            <div class="panel-header">
+              <h3>Top Selling Products</h3>
+              <a href="#">Full Report →</a>
+            </div>
+            <table class="data-table">
+              <thead>
+                <tr><th>Product</th><th>Category</th><th>Units Sold</th><th>Revenue</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>UltraBook Pro 15</td><td>Laptops</td><td>342</td><td>$444K</td></tr>
+                <tr><td>Galaxy Ultra 5G</td><td>Smartphones</td><td>289</td><td>$277K</td></tr>
+                <tr><td>PlayStation 5 Pro</td><td>PlayStation</td><td>201</td><td>$140K</td></tr>
+                <tr><td>Smart Watch Series 7</td><td>Smart Watches</td><td>176</td><td>$46K</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-bottom" style="border:none; padding-top:24px;">
+        <p>© 2026 SHEBA TECH HUB. All rights reserved.</p>
+        <div class="footer-links"><a href="about.html">Privacy Policy</a><a href="about.html">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/dashboard-page.js"></script>
+</body>
+</html>

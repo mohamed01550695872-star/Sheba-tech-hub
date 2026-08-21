@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modules - SHEBA TECH HUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <script src="cart.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-search"><span class="search-icon">🔍</span><input type="text" placeholder="Search products..." /></div>
+        <button class="nav-icon-btn" title="Notifications">🔔<span class="badge-count">3</span></button>
+        <a href="cart.html" class="nav-icon-btn" title="Shopping Cart">🛒<span class="badge-count">2</span></a>
+        <a href="login.html" class="nav-login">Login</a>
+      </div>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1>System Modules</h1>
+      <p>Explore the core modules that power SHEBA TECH HUB</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Modules</span></div>
+    </div>
+  </section>
+
+  <!-- MODULES GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Architecture Overview</span>
+        <h2>Core Modules</h2>
+        <p>Each module is designed to handle a specific part of the e-commerce platform</p>
+      </div>
+      <div class="modules-grid">
+        <!-- Authentication -->
+        <div class="module-card">
+          <div class="module-icon">🔐</div>
+          <h3>Authentication</h3>
+          <p class="module-desc">Secure user registration, login, and session management.</p>
+          <ul class="module-features">
+            <li>Email / Password Login</li>
+            <li>Password Recovery</li>
+            <li>Session Management</li>
+            <li>Role-based Access</li>
+          </ul>
+          <a href="#" class="module-link">Learn More →</a>
+        </div>
+        <!-- Product Management -->
+        <div class="module-card">
+          <div class="module-icon">📦</div>
+          <h3>Product Management</h3>
+          <p class="module-desc">Add, edit, categorize, and manage all products in the catalog.</p>
+          <ul class="module-features">
+            <li>Product CRUD Operations</li>
+            <li>Category Management</li>
+            <li>Inventory Tracking</li>
+            <li>Pricing & Discounts</li>
+          </ul>
+          <a href="#" class="module-link">Learn More →</a>
+        </div>
+        <!-- Shopping Cart -->
+        <div class="module-card">
+          <div class="module-icon">🛒</div>
+          <h3>Shopping Cart</h3>
+          <p class="module-desc">Manage cart items, quantities, and checkout process.</p>
+          <ul class="module-features">
+            <li>Add / Remove Items</li>
+            <li>Quantity Management</li>
+            <li>Price Calculation</li>
+            <li>Checkout Integration</li>
+          </ul>
+          <a href="#" class="module-link">Learn More →</a>
+        </div>
+        <!-- Marketplace -->
+        <div class="module-card">
+          <div class="module-icon">🏪</div>
+          <h3>Marketplace</h3>
+          <p class="module-desc">Buy and sell certified pre-owned devices between users.</p>
+          <ul class="module-features">
+            <li>Sell Used Devices</li>
+            <li>Buy Used Devices</li>
+            <li>Device Verification</li>
+            <li>Seller Ratings</li>
+          </ul>
+          <a href="#" class="module-link">Learn More →</a>
+        </div>
+        <!-- Maintenance -->
+        <div class="module-card">
+          <div class="module-icon">🔧</div>
+          <h3>Maintenance</h3>
+          <p class="module-desc">Book repair services and track maintenance requests.</p>
+          <ul class="module-features">
+            <li>Repair Booking</li>
+            <li>Service Categories</li>
+            <li>Appointment Scheduling</li>
+            <li>Spare Parts Inventory</li>
+          </ul>
+          <a href="#" class="module-link">Learn More →</a>
+        </div>
+        <!-- AI Recommendation -->
+        <div class="module-card">
+          <div class="module-icon">🤖</div>
+          <h3>AI Recommendation</h3>
+          <p class="module-desc">AI-powered product recommendations based on user preferences.</p>
+          <ul class="module-features">
+            <li>Budget Analysis</li>
+            <li>Use Case Matching</li>
+            <li>Smart Product Ranking</li>
+            <li>Personalized Results</li>
+          </ul>
+          <a href="#" class="module-link">Learn More →</a>
+        </div>
+        <!-- Admin Dashboard -->
+        <div class="module-card">
+          <div class="module-icon">📊</div>
+          <h3>Admin Dashboard</h3>
+          <p class="module-desc">Comprehensive admin panel for managing the entire platform.</p>
+          <ul class="module-features">
+            <li>User Management</li>
+            <li>Order Tracking</li>
+            <li>Reports & Statistics</li>
+            <li>System Analytics</li>
+          </ul>
+          <a href="dashboard.html" class="module-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODULE DETAIL EXAMPLE -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Deep Dive</span>
+        <h2>Module Architecture</h2>
+        <p>An example of how each module is structured — purpose, features, workflow, and future improvements</p>
+      </div>
+      <div class="module-detail">
+        <!-- Info -->
+        <div class="module-detail-info">
+          <h2>Shopping Cart Module</h2>
+          <div class="info-block">
+            <h4>Purpose</h4>
+            <p style="font-size:0.9rem;">The Shopping Cart module allows users to collect products they wish to purchase, manage quantities, and proceed to checkout. It calculates totals, discounts, shipping, and tax automatically.</p>
+          </div>
+          <div class="info-block">
+            <h4>Key Features</h4>
+            <ul>
+              <li>Add products to cart from any page</li>
+              <li>Increase or decrease item quantities</li>
+              <li>Remove items from cart</li>
+              <li>Automatic price calculation with discounts</li>
+              <li>Shipping cost estimation</li>
+              <li>Promo code application</li>
+              <li>Seamless checkout integration</li>
+            </ul>
+          </div>
+          <div class="info-block">
+            <h4>Future Improvements</h4>
+            <ul>
+              <li>Save cart across devices for logged-in users</li>
+              <li>Wishlist integration with cart</li>
+              <li>Abandoned cart email reminders</li>
+              <li>Guest checkout support</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Visual Workflow -->
+        <div class="module-detail-visual">
+          <div class="visual-icon">🛒</div>
+          <h3>Cart Workflow</h3>
+          <div class="workflow-step">
+            <div class="step-num">1</div>
+            <span>User browses products</span>
+          </div>
+          <div class="workflow-step">
+            <div class="step-num">2</div>
+            <span>Adds items to cart</span>
+          </div>
+          <div class="workflow-step">
+            <div class="step-num">3</div>
+            <span>Adjusts quantities</span>
+          </div>
+          <div class="workflow-step">
+            <div class="step-num">4</div>
+            <span>Applies promo code</span>
+          </div>
+          <div class="workflow-step">
+            <div class="step-num">5</div>
+            <span>Proceeds to checkout</span>
+          </div>
+          <div class="workflow-step">
+            <div class="step-num">6</div>
+            <span>Order confirmed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+          <p>Your premier destination for all things tech.</p>
+          <div class="social-links"><a href="#">📘</a><a href="#">🐦</a><a href="#">📷</a><a href="#">💼</a><a href="#">📺</a></div>
+        </div>
+        <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="modules.html">Modules</a></li></ul></div>
+        <div class="footer-col"><h5>Shop</h5><ul><li><a href="products.html">All Products</a></li><li><a href="categories.html">Categories</a></li><li><a href="marketplace.html">Marketplace</a></li></ul></div>
+        <div class="footer-col"><h5>Support</h5><ul><li><a href="contact.html">Help Center</a></li><li><a href="ai.html">AI Recommendation</a></li><li><a href="#">Track Order</a></li></ul></div>
+        <div class="footer-col"><h5>Stay Updated</h5><p style="font-size:0.875rem; margin-bottom:16px;">Subscribe for the latest deals.</p><form class="promo-code"><input type="email" placeholder="Your email" /><button type="submit" class="btn btn-primary btn-sm">Subscribe</button></form></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 SHEBA TECH HUB. All rights reserved.</p><div class="footer-links"><a href="about.html">Privacy Policy</a><a href="about.html">Terms of Service</a></div></div>
+    </div>
+  </footer>
+
+</body>
+</html>

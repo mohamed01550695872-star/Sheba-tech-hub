@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - SHEBA TECH HUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <script src="cart.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-search"><span class="search-icon">🔍</span><input type="text" placeholder="Search products..." /></div>
+        <button class="nav-icon-btn" title="Notifications">🔔<span class="badge-count">3</span></button>
+        <a href="cart.html" class="nav-icon-btn" title="Shopping Cart">🛒<span class="badge-count">2</span></a>
+        <a href="login.html" class="nav-login">Login</a>
+      </div>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We're here to help — get in touch with our team</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact</span></div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2" style="gap:48px;">
+        <!-- Contact Form -->
+        <div>
+          <h2 style="margin-bottom:24px;">Send Us a Message</h2>
+          <div style="background:var(--white); border:1px solid var(--border); border-radius:var(--radius-md); padding:32px;">
+            <form>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="c-name">Full Name</label>
+                  <input type="text" id="c-name" placeholder="John Doe" />
+                </div>
+                <div class="form-group">
+                  <label for="c-email">Email Address</label>
+                  <input type="email" id="c-email" placeholder="you@example.com" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="c-phone">Phone Number</label>
+                  <input type="tel" id="c-phone" placeholder="+1 234 567 890" />
+                </div>
+                <div class="form-group">
+                  <label for="c-subject">Subject</label>
+                  <select id="c-subject">
+                    <option>General Inquiry</option>
+                    <option>Product Support</option>
+                    <option>Maintenance Service</option>
+                    <option>Marketplace Question</option>
+                    <option>Order Issue</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="c-message">Message</label>
+                <textarea id="c-message" placeholder="How can we help you?"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block btn-lg">Send Message</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h2 style="margin-bottom:24px;">Get in Touch</h2>
+          <div style="display:flex; flex-direction:column; gap:24px;">
+            <!-- Address -->
+            <div style="display:flex; gap:16px; align-items:flex-start;">
+              <div style="width:48px; height:48px; border-radius:12px; background:var(--primary-light); color:var(--primary); display:flex; align-items:center; justify-content:center; font-size:1.3rem; flex-shrink:0;">📍</div>
+              <div>
+                <h4 style="margin-bottom:6px;">Our Address</h4>
+                <p style="font-size:0.9rem;">123 Tech Boulevard, Innovation District<br />New York, NY 10001, USA</p>
+              </div>
+            </div>
+            <!-- Phone -->
+            <div style="display:flex; gap:16px; align-items:flex-start;">
+              <div style="width:48px; height:48px; border-radius:12px; background:var(--success-light); color:var(--success); display:flex; align-items:center; justify-content:center; font-size:1.3rem; flex-shrink:0;">📞</div>
+              <div>
+                <h4 style="margin-bottom:6px;">Phone Number</h4>
+                <p style="font-size:0.9rem;">+1 (234) 567-8900<br />+1 (234) 567-8901</p>
+              </div>
+            </div>
+            <!-- Email -->
+            <div style="display:flex; gap:16px; align-items:flex-start;">
+              <div style="width:48px; height:48px; border-radius:12px; background:var(--secondary-light); color:var(--secondary-dark); display:flex; align-items:center; justify-content:center; font-size:1.3rem; flex-shrink:0;">✉️</div>
+              <div>
+                <h4 style="margin-bottom:6px;">Email Address</h4>
+                <p style="font-size:0.9rem;">support@shebatechhub.com<br />sales@shebatechhub.com</p>
+              </div>
+            </div>
+            <!-- Hours -->
+            <div style="display:flex; gap:16px; align-items:flex-start;">
+              <div style="width:48px; height:48px; border-radius:12px; background:var(--warning-light); color:var(--warning); display:flex; align-items:center; justify-content:center; font-size:1.3rem; flex-shrink:0;">🕐</div>
+              <div>
+                <h4 style="margin-bottom:6px;">Working Hours</h4>
+                <p style="font-size:0.9rem;">Monday — Friday: 9:00 AM — 8:00 PM<br />Saturday: 10:00 AM — 6:00 PM<br />Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social -->
+          <h4 style="margin:32px 0 16px;">Follow Us</h4>
+          <div class="social-links">
+            <a href="#" title="Facebook">📘</a>
+            <a href="#" title="Twitter">🐦</a>
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="LinkedIn">💼</a>
+            <a href="#" title="YouTube">📺</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP PLACEHOLDER -->
+  <section class="section section-light" style="padding:48px 0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Find Us</span>
+        <h2>Our Location</h2>
+        <p>Visit our store to experience our products in person</p>
+      </div>
+      <div style="background:linear-gradient(135deg, var(--section-bg), var(--secondary-light)); border-radius:var(--radius-lg); padding:80px 32px; text-align:center; border:1px solid var(--border);">
+        <div style="font-size:4rem; margin-bottom:16px;">🗺️</div>
+        <h3>SHEBA TECH HUB Flagship Store</h3>
+        <p style="margin-bottom:24px;">123 Tech Boulevard, Innovation District, New York</p>
+        <a href="#" class="btn btn-primary btn-lg">Get Directions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+          <p>Your premier destination for all things tech.</p>
+          <div class="social-links"><a href="#">📘</a><a href="#">🐦</a><a href="#">📷</a><a href="#">💼</a><a href="#">📺</a></div>
+        </div>
+        <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="modules.html">Modules</a></li></ul></div>
+        <div class="footer-col"><h5>Shop</h5><ul><li><a href="products.html">All Products</a></li><li><a href="categories.html">Categories</a></li><li><a href="marketplace.html">Marketplace</a></li></ul></div>
+        <div class="footer-col"><h5>Support</h5><ul><li><a href="contact.html">Help Center</a></li><li><a href="ai.html">AI Recommendation</a></li><li><a href="#">Track Order</a></li></ul></div>
+        <div class="footer-col"><h5>Stay Updated</h5><p style="font-size:0.875rem; margin-bottom:16px;">Subscribe for the latest deals.</p><form class="promo-code"><input type="email" placeholder="Your email" /><button type="submit" class="btn btn-primary btn-sm">Subscribe</button></form></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 SHEBA TECH HUB. All rights reserved.</p><div class="footer-links"><a href="about.html">Privacy Policy</a><a href="about.html">Terms of Service</a></div></div>
+    </div>
+  </footer>
+
+</body>
+</html>

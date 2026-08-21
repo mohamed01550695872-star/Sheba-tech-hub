@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketplace - SHEBA TECH HUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/products.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <script src="cart.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="marketplace.html" class="active">Marketplace</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-search"><span class="search-icon">🔍</span><input type="text" placeholder="Search products..." /></div>
+        <button class="nav-icon-btn" title="Notifications">🔔<span class="badge-count">3</span></button>
+        <a href="cart.html" class="nav-icon-btn" title="Shopping Cart">🛒<span class="badge-count">2</span></a>
+        <a href="login.html" class="nav-login">Login</a>
+      </div>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Marketplace</h1>
+      <p>Buy and sell certified pre-owned devices with confidence</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Marketplace</span></div>
+    </div>
+  </section>
+
+  <!-- BUY / SELL OPTIONS -->
+  <section class="section">
+    <div class="container">
+      <div class="marketplace-grid">
+        <div class="marketplace-card" style="border-color:var(--primary);">
+          <div class="mp-icon">🛍️</div>
+          <h4>Buy Used Devices</h4>
+          <p>Browse certified pre-owned devices with warranty and quality guarantee. Every device is tested and verified.</p>
+          <a href="#" class="btn btn-primary btn-sm">Browse Devices</a>
+        </div>
+        <div class="marketplace-card" style="border-color:var(--secondary);">
+          <div class="mp-icon" style="background:var(--secondary-light); color:var(--secondary-dark);">💵</div>
+          <h4>Sell Used Devices</h4>
+          <p>List your old device in minutes and reach thousands of buyers. Get the best price for your used tech.</p>
+          <a href="#" class="btn btn-secondary btn-sm">Start Selling</a>
+        </div>
+        <div class="marketplace-card">
+          <div class="mp-icon">🆕</div>
+          <h4>Recently Added</h4>
+          <p>Fresh listings added daily — grab the best deals before others do. Updated in real-time.</p>
+          <a href="#" class="btn btn-outline btn-sm">See Latest</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELL A DEVICE FORM -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">List Your Device</span>
+        <h2>Sell Your Used Device</h2>
+        <p>Fill in the details below and reach thousands of buyers</p>
+      </div>
+      <div style="max-width:700px; margin:0 auto; background:var(--white); border:1px solid var(--border); border-radius:var(--radius-md); padding:32px;">
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="device-name">Device Name</label>
+              <input type="text" id="device-name" placeholder="e.g., iPhone 14 Pro Max" />
+            </div>
+            <div class="form-group">
+              <label for="device-brand">Brand</label>
+              <select id="device-brand">
+                <option>Apple</option><option>Samsung</option><option>Dell</option>
+                <option>HP</option><option>Sony</option><option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="device-category">Category</label>
+              <select id="device-category">
+                <option>Laptop</option><option>Smartphone</option><option>Tablet</option>
+                <option>Console</option><option>Watch</option><option>Camera</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="device-condition">Device Condition</label>
+              <select id="device-condition">
+                <option>Like New</option><option>Excellent</option><option>Good</option><option>Fair</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="device-price">Price ($)</label>
+              <input type="number" id="device-price" placeholder="499" />
+            </div>
+            <div class="form-group">
+              <label for="device-year">Year of Purchase</label>
+              <input type="number" id="device-year" placeholder="2023" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="seller-name">Seller Name</label>
+            <input type="text" id="seller-name" placeholder="Your full name" />
+          </div>
+          <div class="form-group">
+            <label for="seller-contact">Contact Number</label>
+            <input type="tel" id="seller-contact" placeholder="+1 234 567 890" />
+          </div>
+          <div class="form-group">
+            <label for="device-desc">Description</label>
+            <textarea id="device-desc" placeholder="Describe your device, include any defects or accessories included..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg">List My Device</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- USED DEVICES LISTING -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Certified Pre-Owned</span>
+        <h2>Available Used Devices</h2>
+        <p>All devices are tested, verified, and come with a 30-day warranty</p>
+      </div>
+      <div class="products-grid">
+        <!-- Used Device 1 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/30639091/pexels-photo-30639091.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="iPhone 14 Pro" />
+            <div class="product-badge"><span class="badge-new" style="background:var(--secondary);">USED</span></div>
+            <button class="wishlist-btn">♥</button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">Apple</p>
+            <h4 class="product-name">iPhone 14 Pro — 256GB, Excellent</h4>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">4.9 (45)</span></div>
+            <div class="product-price"><span class="price-current">$799</span><span class="price-old">$999</span></div>
+            <div class="stock-status" style="color:var(--secondary-dark);">● Like New Condition</div>
+            <div class="product-actions">
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <!-- Used Device 2 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/12200696/pexels-photo-12200696.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="MacBook Air" />
+            <div class="product-badge"><span class="badge-new" style="background:var(--secondary);">USED</span></div>
+            <button class="wishlist-btn">♥</button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">Apple</p>
+            <h4 class="product-name">MacBook Air M2 — 8GB, 256GB</h4>
+            <div class="product-rating"><span class="stars">★★★★</span><span class="rating-text">4.7 (32)</span></div>
+            <div class="product-price"><span class="price-current">$899</span><span class="price-old">$1,199</span></div>
+            <div class="stock-status" style="color:var(--success);">● Good Condition</div>
+            <div class="product-actions">
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <!-- Used Device 3 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/5700769/pexels-photo-5700769.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="PlayStation 5" />
+            <div class="product-badge"><span class="badge-new" style="background:var(--secondary);">USED</span></div>
+            <button class="wishlist-btn">♥</button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">Sony</p>
+            <h4 class="product-name">PlayStation 5 — 1TB, 2 Controllers</h4>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">5.0 (28)</span></div>
+            <div class="product-price"><span class="price-current">$449</span><span class="price-old">$699</span></div>
+            <div class="stock-status" style="color:var(--secondary-dark);">● Like New Condition</div>
+            <div class="product-actions">
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <!-- Used Device 4 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/12564670/pexels-photo-12564670.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Smart Watch" />
+            <div class="product-badge"><span class="badge-new" style="background:var(--secondary);">USED</span></div>
+            <button class="wishlist-btn">♥</button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">Samsung</p>
+            <h4 class="product-name">Galaxy Watch 5 — 44mm, Bluetooth</h4>
+            <div class="product-rating"><span class="stars">★★★★</span><span class="rating-text">4.6 (19)</span></div>
+            <div class="product-price"><span class="price-current">$179</span><span class="price-old">$279</span></div>
+            <div class="stock-status" style="color:var(--warning);">● Fair Condition</div>
+            <div class="product-actions">
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+          <p>Your premier destination for all things tech.</p>
+          <div class="social-links"><a href="#">📘</a><a href="#">🐦</a><a href="#">📷</a><a href="#">💼</a><a href="#">📺</a></div>
+        </div>
+        <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="modules.html">Modules</a></li></ul></div>
+        <div class="footer-col"><h5>Shop</h5><ul><li><a href="products.html">All Products</a></li><li><a href="categories.html">Categories</a></li><li><a href="marketplace.html">Marketplace</a></li></ul></div>
+        <div class="footer-col"><h5>Support</h5><ul><li><a href="contact.html">Help Center</a></li><li><a href="ai.html">AI Recommendation</a></li><li><a href="#">Track Order</a></li></ul></div>
+        <div class="footer-col"><h5>Stay Updated</h5><p style="font-size:0.875rem; margin-bottom:16px;">Subscribe for the latest deals.</p><form class="promo-code"><input type="email" placeholder="Your email" /><button type="submit" class="btn btn-primary btn-sm">Subscribe</button></form></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 SHEBA TECH HUB. All rights reserved.</p><div class="footer-links"><a href="about.html">Privacy Policy</a><a href="about.html">Terms of Service</a></div></div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/marketplace-page.js"></script>
+</body>
+</html>

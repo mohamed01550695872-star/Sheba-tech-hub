@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details - SHEBA TECH HUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/products.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <script src="cart.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-search"><span class="search-icon">🔍</span><input type="text" placeholder="Search products..." /></div>
+        <button class="nav-icon-btn" title="Notifications">🔔<span class="badge-count">3</span></button>
+        <a href="cart.html" class="nav-icon-btn" title="Shopping Cart">🛒<span class="badge-count">2</span></a>
+        <a href="login.html" class="nav-login">Login</a>
+      </div>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <section class="page-header" style="padding:24px 0;">
+    <div class="container">
+      <div class="breadcrumb" style="justify-content:flex-start;">
+        <a href="index.html">Home</a><span>/</span><a href="products.html">Products</a><span>/</span><a href="categories.html">Laptops</a><span>/</span><span>UltraBook Pro 15</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT DETAILS -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="product-details-layout">
+        <!-- Gallery -->
+        <div class="product-gallery">
+          <div class="main-image">
+            <img src="https://images.pexels.com/photos/18311089/pexels-photo-18311089.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="UltraBook Pro 15" />
+          </div>
+          <div class="thumbs">
+            <div class="thumb active"><img src="https://images.pexels.com/photos/18311089/pexels-photo-18311089.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Thumb 1" /></div>
+            <div class="thumb"><img src="https://images.pexels.com/photos/12200696/pexels-photo-12200696.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Thumb 2" /></div>
+            <div class="thumb"><img src="https://images.pexels.com/photos/4533076/pexels-photo-4533076.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Thumb 3" /></div>
+            <div class="thumb"><img src="https://images.pexels.com/photos/19055620/pexels-photo-19055620.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Thumb 4" /></div>
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="product-info">
+          <div class="product-meta">
+            <span class="meta-brand">Dell</span>
+            <span class="meta-cat">Laptops</span>
+          </div>
+          <h1>UltraBook Pro 15 — i7, 16GB, 512GB SSD</h1>
+          <div class="product-rating">
+            <span class="stars">★★★★★</span>
+            <span style="color:var(--text-light); font-size:0.9rem;">4.9 out of 5 (124 reviews)</span>
+          </div>
+          <div class="product-price-row">
+            <span class="price-current">$1,299</span>
+            <span class="price-old">$1,499</span>
+            <span class="price-save">Save $200</span>
+          </div>
+          <div class="product-stock stock-in" style="color:var(--success); font-weight:500;">● In Stock — Ships within 24 hours</div>
+          <p class="product-desc">
+            The UltraBook Pro 15 combines premium design with powerful performance. Featuring a 15.6-inch
+            4K display, Intel Core i7 processor, 16GB RAM, and a 512GB SSD, it's perfect for professionals,
+            creators, and students alike. All-day battery life keeps you productive anywhere.
+          </p>
+
+          <!-- Specifications -->
+          <table class="spec-table">
+            <tr><td>Display</td><td>15.6" 4K OLED</td></tr>
+            <tr><td>Processor</td><td>Intel Core i7-13700H</td></tr>
+            <tr><td>Memory</td><td>16GB DDR5</td></tr>
+            <tr><td>Storage</td><td>512GB NVMe SSD</td></tr>
+            <tr><td>Graphics</td><td>Intel Iris Xe</td></tr>
+            <tr><td>Battery</td><td>12 hours</td></tr>
+            <tr><td>Weight</td><td>1.8 kg</td></tr>
+            <tr><td>OS</td><td>Windows 11 Pro</td></tr>
+          </table>
+
+          <!-- Features -->
+          <h4 style="margin-bottom:12px; color:var(--primary);">Key Features</h4>
+          <ul class="features-list">
+            <li>4K OLED display with 100% DCI-P3 color accuracy</li>
+            <li>Thunderbolt 4 ports for fast data transfer</li>
+            <li>Backlit keyboard with fingerprint reader</li>
+            <li>Wi-Fi 6E and Bluetooth 5.3 connectivity</li>
+            <li>Premium aluminum chassis, MIL-STD-810H tested</li>
+          </ul>
+
+          <!-- Quantity Selector -->
+          <h4 style="margin-bottom:10px;">Quantity</h4>
+          <div class="quantity-selector">
+            <button type="button">−</button>
+            <input type="text" value="1" readonly />
+            <button type="button">+</button>
+          </div>
+
+          <!-- Actions -->
+          <div class="product-actions-row">
+            <a href="cart.html" class="btn btn-primary btn-lg">Add to Cart</a>
+            <a href="checkout.html" class="btn btn-secondary btn-lg">Buy Now</a>
+            <button class="btn btn-ghost btn-lg">♥ Wishlist</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="product-tabs">
+        <div class="tab-nav">
+          <button class="active">Description</button>
+          <button>Specifications</button>
+          <button>Reviews (124)</button>
+          <button>Shipping</button>
+        </div>
+        <div class="tab-content active">
+          <p style="line-height:1.8; max-width:800px;">
+            The UltraBook Pro 15 is engineered for those who demand the best. Whether you're editing 4K video,
+            running complex simulations, or managing multiple projects, the UltraBook Pro 15 delivers desktop-class
+            performance in a sleek, portable form factor. The stunning 4K OLED display brings your content to life
+            with vivid colors and deep blacks, while the all-day battery ensures you never have to search for an outlet.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <section class="related-products">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">You May Also Like</span>
+        <h2>Related Products</h2>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/3951449/pexels-photo-3951449.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Gaming Laptop RTX" />
+            <div class="product-badge"><span class="badge-sale">-20%</span></div>
+            <button class="wishlist-btn">♥</button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">ASUS</p>
+            <h4 class="product-name">Gaming Laptop RTX — 32GB, 1TB SSD</h4>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">4.9 (201)</span></div>
+            <div class="product-price"><span class="price-current">$1,799</span><span class="price-old">$2,249</span></div>
+            <div class="stock-status stock-out">● Out of Stock</div>
+            <div class="product-actions">
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/12200696/pexels-photo-12200696.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Business Laptop" />
+            <button class="wishlist-btn">♥</button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">Lenovo</p>
+            <h4 class="product-name">Business Laptop 14 — i5, 8GB, 256GB</h4>
+            <div class="product-rating"><span class="stars">★★★★</span><span class="rating-text">4.5 (92)</span></div>
+            <div class="product-price"><span class="price-current">$749</span></div>
+            <div class="stock-status stock-in">● In Stock</div>
+            <div class="product-actions">
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/4533076/pexels-photo-4533076.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Creator Laptop" />
+            <div class="product-badge"><span class="badge-new">NEW</span></div>
+            <button class="wishlist-btn">♥</button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">HP</p>
+            <h4 class="product-name">Creator Laptop 16 — Ryzen 9, 32GB</h4>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">4.8 (76)</span></div>
+            <div class="product-price"><span class="price-current">$1,599</span></div>
+            <div class="stock-status stock-in">● In Stock</div>
+            <div class="product-actions">
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/19055620/pexels-photo-19055620.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Wireless Mouse" />
+            <div class="product-badge"><span class="badge-sale">-10%</span></div>
+            <button class="wishlist-btn">♥</button>
+          </div>
+          <div class="product-body">
+            <p class="product-brand">Logitech</p>
+            <h4 class="product-name">Wireless Mouse Pro — Ergonomic</h4>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-text">4.7 (189)</span></div>
+            <div class="product-price"><span class="price-current">$59</span><span class="price-old">$69</span></div>
+            <div class="stock-status stock-in">● In Stock</div>
+            <div class="product-actions">
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+              <a href="product-details.html" class="btn btn-ghost btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+          <p>Your premier destination for all things tech.</p>
+          <div class="social-links"><a href="#">📘</a><a href="#">🐦</a><a href="#">📷</a><a href="#">💼</a><a href="#">📺</a></div>
+        </div>
+        <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="modules.html">Modules</a></li></ul></div>
+        <div class="footer-col"><h5>Shop</h5><ul><li><a href="products.html">All Products</a></li><li><a href="categories.html">Categories</a></li><li><a href="marketplace.html">Marketplace</a></li></ul></div>
+        <div class="footer-col"><h5>Support</h5><ul><li><a href="contact.html">Help Center</a></li><li><a href="ai.html">AI Recommendation</a></li><li><a href="#">Track Order</a></li></ul></div>
+        <div class="footer-col"><h5>Stay Updated</h5><p style="font-size:0.875rem; margin-bottom:16px;">Subscribe for the latest deals.</p><form class="promo-code"><input type="email" placeholder="Your email" /><button type="submit" class="btn btn-primary btn-sm">Subscribe</button></form></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 SHEBA TECH HUB. All rights reserved.</p><div class="footer-links"><a href="about.html">Privacy Policy</a><a href="about.html">Terms of Service</a></div></div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/product-details-page.js"></script>
+</body>
+</html>

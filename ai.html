@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Recommendation - SHEBA TECH HUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <script src="cart.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-search"><span class="search-icon">🔍</span><input type="text" placeholder="Search products..." /></div>
+        <button class="nav-icon-btn" title="Notifications">🔔<span class="badge-count">3</span></button>
+        <a href="cart.html" class="nav-icon-btn" title="Shopping Cart">🛒<span class="badge-count">2</span></a>
+        <a href="login.html" class="nav-login">Login</a>
+      </div>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- AI HERO -->
+  <section class="hero" style="padding:48px 0;">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <span class="hero-badge">🤖 AI Powered</span>
+        <h1>AI Product <span class="gradient-text">Recommendation</span></h1>
+        <p class="hero-slogan">Find the perfect device for your needs</p>
+        <p class="hero-desc">
+          Our AI engine analyzes your budget, use case, and preferences to recommend the best tech products
+          for you. No more endless searching — let AI do the work.
+        </p>
+        <a href="#quiz" class="btn btn-primary btn-lg">Get Started</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="AI Technology" />
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">How It Works</span>
+        <h2>AI Recommendation Engine</h2>
+        <p>Our AI analyzes multiple factors to suggest the perfect product for you</p>
+      </div>
+      <div class="marketplace-grid">
+        <div class="marketplace-card">
+          <div class="mp-icon">💰</div>
+          <h4>Budget Analysis</h4>
+          <p>Tell us your budget range and the AI will find products that give you the best value within your price limit.</p>
+        </div>
+        <div class="marketplace-card">
+          <div class="mp-icon">🎮</div>
+          <h4>Use Case Matching</h4>
+          <p>Whether for gaming, programming, business, education, or content creation — we match specs to your needs.</p>
+        </div>
+        <div class="marketplace-card">
+          <div class="mp-icon">📊</div>
+          <h4>Smart Ranking</h4>
+          <p>Our algorithm ranks products by performance, reliability, reviews, and price-to-performance ratio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USE CASES -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Personalized For You</span>
+        <h2>Recommendation Categories</h2>
+        <p>The AI recommends products based on your specific use case</p>
+      </div>
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="cat-icon">💰</div>
+          <h4>Budget</h4>
+          <p>Best value for money</p>
+        </div>
+        <div class="category-card">
+          <div class="cat-icon">🎮</div>
+          <h4>Gaming</h4>
+          <p>High-performance rigs</p>
+        </div>
+        <div class="category-card">
+          <div class="cat-icon">📊</div>
+          <h4>Business</h4>
+          <p>Reliable & productive</p>
+        </div>
+        <div class="category-card">
+          <div class="cat-icon">💻</div>
+          <h4>Programming</h4>
+          <p>Dev-ready machines</p>
+        </div>
+        <div class="category-card">
+          <div class="cat-icon">🎓</div>
+          <h4>Study</h4>
+          <p>Student-friendly options</p>
+        </div>
+        <div class="category-card">
+          <div class="cat-icon">🎬</div>
+          <h4>Content Creation</h4>
+          <p>For creators & editors</p>
+        </div>
+        <div class="category-card">
+          <div class="cat-icon">📱</div>
+          <h4>Daily Use</h4>
+          <p>Everyday essentials</p>
+        </div>
+        <div class="category-card">
+          <div class="cat-icon">🏢</div>
+          <h4>Office</h4>
+          <p>Work from home setups</p>
+        </div>
+        <div class="category-card">
+          <div class="cat-icon">🎨</div>
+          <h4>Design</h4>
+          <p>For designers & artists</p>
+        </div>
+        <div class="category-card">
+          <div class="cat-icon">🔬</div>
+          <h4>Research</h4>
+          <p>Data & analysis tools</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI QUIZ / FORM -->
+  <section class="section" id="quiz">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Get Your Recommendation</span>
+        <h2>Tell Us What You Need</h2>
+        <p>Answer a few questions and let our AI find the perfect product</p>
+      </div>
+      <div style="max-width:700px; margin:0 auto; background:var(--white); border:1px solid var(--border); border-radius:var(--radius-md); padding:32px;">
+        <form>
+          <!-- Budget -->
+          <div class="form-group">
+            <label>What is your budget range?</label>
+            <select>
+              <option>Under $500</option>
+              <option>$500 — $1,000</option>
+              <option>$1,000 — $1,500</option>
+              <option>$1,500 — $2,500</option>
+              <option>Above $2,500</option>
+            </select>
+          </div>
+          <!-- Use Case -->
+          <div class="form-group">
+            <label>What will you use it for?</label>
+            <select>
+              <option>Gaming</option>
+              <option>Programming / Development</option>
+              <option>Business / Office</option>
+              <option>Education / Study</option>
+              <option>Content Creation / Video Editing</option>
+              <option>Daily Use / Browsing</option>
+              <option>Graphic Design</option>
+              <option>Research / Data Analysis</option>
+            </select>
+          </div>
+          <!-- Device Type -->
+          <div class="form-group">
+            <label>What type of device are you looking for?</label>
+            <select>
+              <option>Laptop</option>
+              <option>Smartphone</option>
+              <option>Tablet</option>
+              <option>Desktop PC</option>
+              <option>Gaming Console</option>
+              <option>Smart Watch</option>
+              <option>Camera</option>
+            </select>
+          </div>
+          <!-- Priority -->
+          <div class="form-group">
+            <label>What matters most to you?</label>
+            <select>
+              <option>Performance / Speed</option>
+              <option>Battery Life</option>
+              <option>Portability / Weight</option>
+              <option>Display Quality</option>
+              <option>Build Quality / Durability</option>
+              <option>Value for Money</option>
+            </select>
+          </div>
+          <!-- Brand Preference -->
+          <div class="form-group">
+            <label>Any brand preference?</label>
+            <select>
+              <option>No preference</option>
+              <option>Apple</option>
+              <option>Dell</option>
+              <option>HP</option>
+              <option>Lenovo</option>
+              <option>ASUS</option>
+              <option>Samsung</option>
+              <option>Sony</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg">🤖 Get AI Recommendation</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+          <p>Your premier destination for all things tech.</p>
+          <div class="social-links"><a href="#">📘</a><a href="#">🐦</a><a href="#">📷</a><a href="#">💼</a><a href="#">📺</a></div>
+        </div>
+        <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="modules.html">Modules</a></li></ul></div>
+        <div class="footer-col"><h5>Shop</h5><ul><li><a href="products.html">All Products</a></li><li><a href="categories.html">Categories</a></li><li><a href="marketplace.html">Marketplace</a></li></ul></div>
+        <div class="footer-col"><h5>Support</h5><ul><li><a href="contact.html">Help Center</a></li><li><a href="ai.html">AI Recommendation</a></li><li><a href="#">Track Order</a></li></ul></div>
+        <div class="footer-col"><h5>Stay Updated</h5><p style="font-size:0.875rem; margin-bottom:16px;">Subscribe for the latest deals.</p><form class="promo-code"><input type="email" placeholder="Your email" /><button type="submit" class="btn btn-primary btn-sm">Subscribe</button></form></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 SHEBA TECH HUB. All rights reserved.</p><div class="footer-links"><a href="about.html">Privacy Policy</a><a href="about.html">Terms of Service</a></div></div>
+    </div>
+  </footer>
+
+</body>
+</html>

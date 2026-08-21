@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - SHEBA TECH HUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <script src="cart.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-search"><span class="search-icon">🔍</span><input type="text" placeholder="Search products..." /></div>
+        <button class="nav-icon-btn" title="Notifications">🔔<span class="badge-count">3</span></button>
+        <a href="cart.html" class="nav-icon-btn" title="Shopping Cart">🛒<span class="badge-count">2</span></a>
+        <a href="login.html" class="nav-login active">Login</a>
+      </div>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- LOGIN PAGE -->
+  <section class="auth-page">
+    <div class="auth-container">
+      <div class="auth-header">
+        <div class="auth-logo">S</div>
+        <h2>Welcome Back</h2>
+        <p>Sign in to your SHEBA TECH HUB account</p>
+      </div>
+      <div class="auth-body">
+        <form>
+          <!-- Username -->
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username" />
+          </div>
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" />
+          </div>
+          <!-- Password -->
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" />
+          </div>
+          <!-- Options -->
+          <div class="auth-options">
+            <div class="form-check">
+              <input type="checkbox" id="remember" />
+              <label for="remember">Remember Me</label>
+            </div>
+            <a href="forgot-password.html" style="font-size:0.875rem;">Forgot Password?</a>
+          </div>
+          <!-- Login Button -->
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Login</button>
+        </form>
+
+        <!-- Divider -->
+        <div class="auth-divider">or continue with</div>
+        <!-- Social Login -->
+        <div class="auth-social">
+          <button class="btn btn-ghost">📘 Google</button>
+          <button class="btn btn-ghost">🍎 Apple</button>
+        </div>
+      </div>
+      <div class="auth-footer">
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-bottom" style="border:none; padding-top:0;">
+        <p>© 2026 SHEBA TECH HUB. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="about.html">Privacy Policy</a>
+          <a href="about.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

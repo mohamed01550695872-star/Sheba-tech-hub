@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - SHEBA TECH HUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <script src="cart.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-search"><span class="search-icon">🔍</span><input type="text" placeholder="Search products..." /></div>
+        <button class="nav-icon-btn" title="Notifications">🔔<span class="badge-count">3</span></button>
+        <a href="cart.html" class="nav-icon-btn" title="Shopping Cart">🛒<span class="badge-count">2</span></a>
+        <a href="login.html" class="nav-login">Login</a>
+      </div>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- REGISTER PAGE -->
+  <section class="auth-page">
+    <div class="auth-container" style="max-width:540px;">
+      <div class="auth-header">
+        <div class="auth-logo">S</div>
+        <h2>Create Account</h2>
+        <p>Join SHEBA TECH HUB and start shopping</p>
+      </div>
+      <div class="auth-body">
+        <form>
+          <!-- Full Name -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" placeholder="John" />
+            </div>
+            <div class="form-group">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" placeholder="Doe" />
+            </div>
+          </div>
+          <!-- Username -->
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Choose a username" />
+          </div>
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" />
+          </div>
+          <!-- Phone -->
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+1 234 567 890" />
+          </div>
+          <!-- Password -->
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Create a strong password" />
+            <div class="password-strength">
+              <span class="active"></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <!-- Confirm Password -->
+          <div class="form-group">
+            <label for="confirm">Confirm Password</label>
+            <input type="password" id="confirm" placeholder="Re-enter password" />
+          </div>
+          <!-- Terms -->
+          <div class="form-check" style="margin-bottom:24px;">
+            <input type="checkbox" id="terms" />
+            <label for="terms">I agree to the <a href="about.html">Terms of Service</a> and <a href="about.html">Privacy Policy</a></label>
+          </div>
+          <!-- Register Button -->
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Create Account</button>
+        </form>
+
+        <div class="auth-divider">or sign up with</div>
+        <div class="auth-social">
+          <button class="btn btn-ghost">📘 Google</button>
+          <button class="btn btn-ghost">🍎 Apple</button>
+        </div>
+      </div>
+      <div class="auth-footer">
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-bottom" style="border:none; padding-top:0;">
+        <p>© 2026 SHEBA TECH HUB. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="about.html">Privacy Policy</a>
+          <a href="about.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

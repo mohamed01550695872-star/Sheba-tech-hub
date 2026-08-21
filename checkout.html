@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - SHEBA TECH HUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/cart.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <script src="cart.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-search"><span class="search-icon">🔍</span><input type="text" placeholder="Search products..." /></div>
+        <button class="nav-icon-btn" title="Notifications">🔔<span class="badge-count">3</span></button>
+        <a href="cart.html" class="nav-icon-btn" title="Shopping Cart">🛒<span class="badge-count">2</span></a>
+        <a href="login.html" class="nav-login">Login</a>
+      </div>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Checkout</h1>
+      <p>Complete your order in a few simple steps</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="cart.html">Cart</a><span>/</span><span>Checkout</span></div>
+    </div>
+  </section>
+
+  <!-- CHECKOUT LAYOUT -->
+  <section class="section" style="padding-top:32px;">
+    <div class="container">
+      <div class="checkout-layout">
+        <!-- Checkout Form -->
+        <div class="checkout-form">
+          <!-- Billing Information -->
+          <div class="checkout-section">
+            <h3><span class="step-number">1</span> Billing Information</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="John" />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Doe" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="you@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+1 234 567 890" />
+            </div>
+          </div>
+
+          <!-- Shipping Address -->
+          <div class="checkout-section">
+            <h3><span class="step-number">2</span> Shipping Address</h3>
+            <div class="form-group">
+              <label for="address">Street Address</label>
+              <input type="text" id="address" placeholder="123 Main Street" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="New York" />
+              </div>
+              <div class="form-group">
+                <label for="zip">ZIP Code</label>
+                <input type="text" id="zip" placeholder="10001" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="country">Country</label>
+              <select id="country">
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>Egypt</option>
+                <option>Saudi Arabia</option>
+                <option>UAE</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="same-address" checked />
+              <label for="same-address">Billing address same as shipping</label>
+            </div>
+          </div>
+
+          <!-- Payment Methods -->
+          <div class="checkout-section">
+            <h3><span class="step-number">3</span> Payment Method</h3>
+            <div class="payment-methods">
+              <label class="payment-option selected">
+                <input type="radio" name="payment" checked style="display:none;" />
+                <div class="pay-icon">💵</div>
+                <div class="pay-name">Cash on Delivery</div>
+                <div class="pay-desc">Pay when you receive</div>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" style="display:none;" />
+                <div class="pay-icon">💳</div>
+                <div class="pay-name">Visa</div>
+                <div class="pay-desc">Credit / Debit Card</div>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" style="display:none;" />
+                <div class="pay-icon">💳</div>
+                <div class="pay-name">MasterCard</div>
+                <div class="pay-desc">Credit / Debit Card</div>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" style="display:none;" />
+                <div class="pay-icon">🅿️</div>
+                <div class="pay-name">PayPal</div>
+                <div class="pay-desc">Pay with PayPal balance</div>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" style="display:none;" />
+                <div class="pay-icon">📱</div>
+                <div class="pay-name">Vodafone Cash</div>
+                <div class="pay-desc">Mobile wallet payment</div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Confirm -->
+          <div class="form-check" style="margin-bottom:24px;">
+            <input type="checkbox" id="terms-check" />
+            <label for="terms-check">I agree to the <a href="about.html">Terms of Service</a> and confirm my order</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Confirm Order</button>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+          <!-- Items -->
+          <div class="order-item">
+            <img src="https://images.pexels.com/photos/18311089/pexels-photo-18311089.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="UltraBook Pro 15" />
+            <div class="order-item-info">
+              <h5>UltraBook Pro 15</h5>
+              <p>Qty: 1 × $1,299</p>
+            </div>
+            <div class="order-item-price">$1,299</div>
+          </div>
+          <div class="order-item">
+            <img src="https://images.pexels.com/photos/31541678/pexels-photo-31541678.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Smart Watch Series 7" />
+            <div class="order-item-info">
+              <h5>Smart Watch Series 7</h5>
+              <p>Qty: 2 × $259</p>
+            </div>
+            <div class="order-item-price">$518</div>
+          </div>
+          <div class="order-item">
+            <img src="https://images.pexels.com/photos/7727496/pexels-photo-7727496.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Gaming Keyboard" />
+            <div class="order-item-info">
+              <h5>Gaming Keyboard RGB</h5>
+              <p>Qty: 1 × $129</p>
+            </div>
+            <div class="order-item-price">$129</div>
+          </div>
+
+          <!-- Totals -->
+          <div class="summary-divider"></div>
+          <div class="summary-row"><span>Subtotal</span><span>$1,946.00</span></div>
+          <div class="summary-row discount"><span>Discount</span><span>−$140.00</span></div>
+          <div class="summary-row shipping"><span>Shipping</span><span>FREE</span></div>
+          <div class="summary-row"><span>Tax (8%)</span><span>$155.68</span></div>
+          <div class="summary-divider"></div>
+          <div class="summary-total"><span>Grand Total</span><span>$1,961.68</span></div>
+
+          <div class="alert alert-success" style="margin-top:16px; font-size:0.8rem;">
+            ✓ Free shipping applied on orders over $500
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+          <p>Your premier destination for all things tech.</p>
+          <div class="social-links"><a href="#">📘</a><a href="#">🐦</a><a href="#">📷</a><a href="#">💼</a><a href="#">📺</a></div>
+        </div>
+        <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="modules.html">Modules</a></li></ul></div>
+        <div class="footer-col"><h5>Shop</h5><ul><li><a href="products.html">All Products</a></li><li><a href="categories.html">Categories</a></li><li><a href="marketplace.html">Marketplace</a></li></ul></div>
+        <div class="footer-col"><h5>Support</h5><ul><li><a href="contact.html">Help Center</a></li><li><a href="ai.html">AI Recommendation</a></li><li><a href="#">Track Order</a></li></ul></div>
+        <div class="footer-col"><h5>Stay Updated</h5><p style="font-size:0.875rem; margin-bottom:16px;">Subscribe for the latest deals.</p><form class="promo-code"><input type="email" placeholder="Your email" /><button type="submit" class="btn btn-primary btn-sm">Subscribe</button></form></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 SHEBA TECH HUB. All rights reserved.</p><div class="footer-links"><a href="about.html">Privacy Policy</a><a href="about.html">Terms of Service</a></div></div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/checkout-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart - SHEBA TECH HUB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/cart.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <script src="cart.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-search"><span class="search-icon">🔍</span><input type="text" placeholder="Search products..." /></div>
+        <button class="nav-icon-btn" title="Notifications">🔔<span class="badge-count">3</span></button>
+        <a href="cart.html" class="nav-icon-btn" title="Shopping Cart">🛒<span class="badge-count">2</span></a>
+        <a href="login.html" class="nav-login">Login</a>
+      </div>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Shopping Cart</h1>
+      <p>Review your items before checkout</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Cart</span></div>
+    </div>
+  </section>
+
+  <!-- CART LAYOUT -->
+  <section class="section" style="padding-top:32px;">
+    <div class="container">
+      <div class="cart-layout">
+        <!-- Cart Items (rendered dynamically by cart.js) -->
+        <div class="cart-items" id="cart-items">
+          <!-- Items injected here by JavaScript -->
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+          <h3>Order Summary</h3>
+          <div class="summary-row">
+            <span id="sum-count">0 items</span><span id="sum-subtotal">$0.00</span>
+          </div>
+          <div class="summary-row discount">
+            <span>Discount (10% over $500)</span><span id="sum-discount">$0.00</span>
+          </div>
+          <div class="summary-row shipping">
+            <span>Shipping</span><span id="sum-shipping">FREE</span>
+          </div>
+          <div class="summary-row">
+            <span>Tax (8%)</span><span id="sum-tax">$0.00</span>
+          </div>
+          <div class="summary-divider"></div>
+          <div class="summary-total">
+            <span>Grand Total</span><span id="sum-total">$0.00</span>
+          </div>
+
+          <!-- Promo Code -->
+          <div class="promo-code">
+            <input type="text" placeholder="Promo code" />
+            <button class="btn btn-ghost btn-sm">Apply</button>
+          </div>
+
+          <!-- Checkout -->
+          <a href="checkout.html" class="btn btn-primary btn-block btn-lg">Proceed to Checkout</a>
+          <p style="text-align:center; font-size:0.8rem; margin-top:12px; color:var(--text-light);">
+            🔒 Secure checkout · 256-bit SSL encryption
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="nav-logo"><img src="/sheba_tech_hub_microchip_concept.png" alt="SHEBA TECH HUB" class="nav-logo-img" /></a>
+          <p>Your premier destination for all things tech.</p>
+          <div class="social-links"><a href="#">📘</a><a href="#">🐦</a><a href="#">📷</a><a href="#">💼</a><a href="#">📺</a></div>
+        </div>
+        <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="modules.html">Modules</a></li></ul></div>
+        <div class="footer-col"><h5>Shop</h5><ul><li><a href="products.html">All Products</a></li><li><a href="categories.html">Categories</a></li><li><a href="marketplace.html">Marketplace</a></li></ul></div>
+        <div class="footer-col"><h5>Support</h5><ul><li><a href="contact.html">Help Center</a></li><li><a href="ai.html">AI Recommendation</a></li><li><a href="#">Track Order</a></li></ul></div>
+        <div class="footer-col"><h5>Stay Updated</h5><p style="font-size:0.875rem; margin-bottom:16px;">Subscribe for the latest deals.</p><form class="promo-code"><input type="email" placeholder="Your email" /><button type="submit" class="btn btn-primary btn-sm">Subscribe</button></form></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 SHEBA TECH HUB. All rights reserved.</p><div class="footer-links"><a href="about.html">Privacy Policy</a><a href="about.html">Terms of Service</a></div></div>
+    </div>
+  </footer>
+
+</body>
+</html>
